@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makel Layton — AI & Embedded Systems</title>
@@ -8,10 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css" />
+
 </head>
 <body>
-  <div class="bg-blobs">
+  <div class="bg-blobs" aria-hidden="true">
     <div class="blob b1"></div>
     <div class="blob b2"></div>
     <div class="blob b3"></div>
@@ -19,11 +22,11 @@
 
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">Makel<span>Layton</span></a>
+      <a class="brand" href="index.html">Makel<span>Layton</span></a>
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
         <a class="btn ghost" href="assets/Makel_Layton_Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </nav>
       <button class="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -32,14 +35,14 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero reveal">
       <div class="container hero-grid">
         <div class="copy">
           <p class="eyebrow">AI • Embedded • Product</p>
           <h1>Building intelligent experiences<span> at the edge</span></h1>
-          <p class="lede">I design AI‑powered embedded systems and lead products from zero → one. Psychology + Data + Firmware + ML — crafted into things people love.</p>
+          <p class="lede">I design AI-powered embedded systems and lead products from zero → one. Psychology + Data + Firmware + ML — crafted into things people love.</p>
           <div class="cta">
-            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn primary" href="projects.html">View Projects</a>
             <a class="btn ghost" href="mailto:makellayton27@gmail.com">Email Me</a>
           </div>
           <div class="badges">
@@ -47,60 +50,58 @@
           </div>
         </div>
         <div class="hero-card">
-          <img src="assets/hero-shot.jpg" alt="Edge AI device demo" />
+          <video class="hero-video" src="assets/hero.mp4" autoplay muted loop playsinline></video>
+          <img class="hero-fallback" src="assets/hero-shot.jpg" alt="Edge AI device demo" />
           <div class="glass">
-            <h3>On‑device inference</h3>
+            <h3>On-device inference</h3>
             <p>Quantized CNN running at <b>30 FPS</b> on edge hardware.</p>
           </div>
         </div>
       </div>
-
-      <div class="logos container" aria-label="Worked with / built for">
+      <div class="logos container">
         <span class="pill">Microsoft (Capgemini)</span>
         <span class="pill">Greystar</span>
         <span class="pill">IoT • Edge AI</span>
-        <span class="pill">Real‑Time Systems</span>
+        <span class="pill">Real-Time Systems</span>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
+    <section class="section projects reveal">
       <div class="container">
         <div class="section-head">
           <h2>Featured Projects</h2>
-          <a class="link" href="https://github.com/" target="_blank" rel="noopener">All repos →</a>
+          <a class="link" href="projects.html">See all →</a>
         </div>
         <div id="project-grid" class="project-grid"></div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
+    <section class="section about reveal">
       <div class="container about-grid">
         <div class="about-card">
           <img src="assets/about-shot.jpg" alt="Makel Layton" />
         </div>
         <div>
-          <h2>Human‑centered technologist</h2>
-          <p>I bridge human behavior, data, and systems engineering. I’m pursuing an <b>MS in AI</b> and the <b>UW Embedded & Real‑Time Systems</b> certificate, building firmware and deploying models at the edge.</p>
+          <h2>Human-centered technologist</h2>
+          <p>I bridge human behavior, data, and systems engineering. I’m pursuing an <b>MS in AI</b> and the <b>UW Embedded & Real-Time Systems</b> certificate, building firmware and deploying models at the edge.</p>
           <ul class="bullets">
             <li>Shipped at Microsoft scale — search, security & data science features.</li>
-            <li>Hands‑on with microcontrollers, RTOS, and on‑device ML.</li>
+            <li>Hands-on with microcontrollers, RTOS, and on-device ML.</li>
             <li>Clear specs & visuals so teams ship faster.</li>
           </ul>
+          <div class="cta"><a class="btn ghost" href="about.html">More about me</a></div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
+    <section class="section contact reveal">
       <div class="container contact-inner">
         <h2>Let’s build something</h2>
-        <p>Open to roles and collaborations in AI/Embedded, product engineering, and data‑driven platforms.</p>
+        <p>Open to roles and collaborations in AI/Embedded, product engineering, and data-driven platforms.</p>
         <div class="cta">
           <a class="btn primary" href="mailto:makellayton27@gmail.com">Email</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/makellayton/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://github.com/makellayton" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </section>
@@ -111,7 +112,7 @@
       <p>© <span id="year"></span> Makel Layton — Built for GitHub Pages</p>
     </div>
   </footer>
-
   <script src="assets/site.js"></script>
+
 </body>
 </html>
