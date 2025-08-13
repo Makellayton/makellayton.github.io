@@ -2,90 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makel Layton — AI & Embedded Systems</title>
-  <meta name="description" content="AI & Embedded Systems Innovator | Product Leader">
+  <meta name="description" content="AI & Embedded Systems Innovator | Product Leader" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <div class="bg-blobs">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
   <header class="nav">
     <div class="container nav-inner">
-      <div class="logo">Makel<span>Layton</span></div>
-      <nav>
+      <a class="brand" href="#top">Makel<span>Layton</span></a>
+      <nav class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-ghost" href="assets/Makel_Layton_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn ghost" href="assets/Makel_Layton_Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </nav>
+      <button class="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <h1>AI & Embedded Systems Innovator<br><span class="sub">Product Leader</span></h1>
-        <p>Bridging human behavior insights, AI, and embedded hardware to create impactful, intelligent solutions.</p>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="copy">
+          <p class="eyebrow">AI • Embedded • Product</p>
+          <h1>Building intelligent experiences<span> at the edge</span></h1>
+          <p class="lede">I design AI‑powered embedded systems and lead products from zero → one. Psychology + Data + Firmware + ML — crafted into things people love.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:makellayton27@gmail.com">Email Me</a>
+          </div>
+          <div class="badges">
+            <span>Embedded C/C++</span><span>TensorFlow Lite</span><span>Python</span><span>RTOS</span><span>Azure DevOps</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/hero-shot.jpg" alt="Edge AI device demo" />
+          <div class="glass">
+            <h3>On‑device inference</h3>
+            <p>Quantized CNN running at <b>30 FPS</b> on edge hardware.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="logos container" aria-label="Worked with / built for">
+        <span class="pill">Microsoft (Capgemini)</span>
+        <span class="pill">Greystar</span>
+        <span class="pill">IoT • Edge AI</span>
+        <span class="pill">Real‑Time Systems</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <a class="link" href="https://github.com/" target="_blank" rel="noopener">All repos →</a>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <img src="assets/about-shot.jpg" alt="Makel Layton" />
+        </div>
+        <div>
+          <h2>Human‑centered technologist</h2>
+          <p>I bridge human behavior, data, and systems engineering. I’m pursuing an <b>MS in AI</b> and the <b>UW Embedded & Real‑Time Systems</b> certificate, building firmware and deploying models at the edge.</p>
+          <ul class="bullets">
+            <li>Shipped at Microsoft scale — search, security & data science features.</li>
+            <li>Hands‑on with microcontrollers, RTOS, and on‑device ML.</li>
+            <li>Clear specs & visuals so teams ship faster.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2>Let’s build something</h2>
+        <p>Open to roles and collaborations in AI/Embedded, product engineering, and data‑driven platforms.</p>
         <div class="cta">
-          <a class="btn" href="#projects">View My Projects</a>
-          <a class="btn btn-ghost" href="mailto:makellayton27@gmail.com">Email Me</a>
-        </div>
-        <div class="skills-row">
-          <span class="tag">Embedded C/C++</span>
-          <span class="tag">TensorFlow Lite</span>
-          <span class="tag">Python</span>
-          <span class="tag">RTOS</span>
-          <span class="tag">Azure DevOps</span>
-          <span class="tag">CI/CD</span>
-          <span class="tag">Data Viz</span>
+          <a class="btn primary" href="mailto:makellayton27@gmail.com">Email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/makellayton/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-      <div class="hero-right">
-        <img src="assets/hero-placeholder.png" alt="Makel Layton portrait placeholder">
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div id="project-grid" class="project-grid"></div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container about-grid">
-      <div>
-        <img class="about-img" src="assets/about-placeholder.png" alt="About Makel">
-      </div>
-      <div>
-        <h2>About Me</h2>
-        <p>
-          I design and develop AI‑powered embedded systems and lead cross‑functional teams at the intersection of technology and user experience.
-          I’m currently pursuing an MS in Artificial Intelligence and the University of Washington Certificate in Embedded & Real‑Time Systems Programming,
-          complementing my BS in Psychology (minor in Data Analytics).
-        </p>
-        <ul class="bullets">
-          <li>Shipped features as a Product Owner @ Microsoft (Capgemini).</li>
-          <li>Hands‑on with firmware, on‑device ML, and IoT prototypes.</li>
-          <li>Communicator who turns complex tech into clear product value.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Let’s Connect</h2>
-      <p>Open to roles and collaborations in AI/Embedded Systems, product engineering, and data‑driven platforms.</p>
-      <div class="contact-links">
-        <a class="btn" href="mailto:makellayton27@gmail.com">Email</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/makellayton/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
